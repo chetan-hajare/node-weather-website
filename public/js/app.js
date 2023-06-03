@@ -2,7 +2,7 @@ console.log('Client side javascript file is loaded')
 
 fetch('https://puzzle.mead.io/puzzle').then((response) => {
     response.json().then((data) => {
-        console.log(data)
+        console.log(data);
     })
 })
 
@@ -25,8 +25,6 @@ weatherForm.addEventListener('submit', (e) => {
         } else {
             messageOne.textContent = data.location
             messageTwo.textContent = data.forecast
-            console.log(data.location)
-            console.log(data.forecast)
         }
     })
 })
